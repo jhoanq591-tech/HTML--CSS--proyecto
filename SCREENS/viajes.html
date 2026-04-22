@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UBERX — Viajes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/viajes.css">
+</head>
+<body>
+<div class="screen">
+
+  <!-- Mapa espacial -->
+  <div class="space-map">
+    <div class="stars-bg"></div>
+
+    <div class="status-bar">
+      <span>12:31</span>
+      <div class="status-right">
+        <div class="sig"><span></span><span></span><span></span><span></span></div>
+        <span>📶</span>
+        <div class="battery"><div class="battery-fill"></div></div>
+      </div>
+    </div>
+
+    <a href="inicio.html" class="back-btn">‹</a>
+
+    <!-- Tierra -->
+    <div class="planet planet-earth">
+      <a href="#" class="planet-label" style="order:2">Earth ›</a>
+      <div class="planet-ball" style="order:1"></div>
+    </div>
+
+    <!-- Marte -->
+    <div class="planet planet-mars">
+      <a href="#" class="planet-label" style="order:1">Mars ›</a>
+      <div class="planet-ball" style="order:2"></div>
+    </div>
+
+    <!-- Trayectoria orbital -->
+    <div class="orbit-path">
+      <svg viewBox="0 0 390 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M 120 270 Q 250 80 310 110" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="8 6"/>
+        <circle cx="120" cy="270" r="4" fill="rgba(79,143,255,0.6)"/>
+        <circle cx="310" cy="110" r="4" fill="rgba(232,130,90,0.6)"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Bottom sheet — selección de nave -->
+  <div class="bottom-sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-notice">⚠️ Fares are higher due to space debris</div>
+
+    <div class="ship-list">
+      <input class="ship-radio" type="radio" name="ship" id="ship-1" checked>
+      <label class="ship-card-label" for="ship-1">
+        <div class="ship-img">🛸</div>
+        <div class="ship-info">
+          <div class="ship-name">Crew Dragon</div>
+          <div class="ship-launch">Next Launch: 12/03/53, 19:30</div>
+        </div>
+        <div class="ship-price">48.5<div class="price-coin"></div></div>
+      </label>
+
+      <input class="ship-radio" type="radio" name="ship" id="ship-2">
+      <label class="ship-card-label" for="ship-2">
+        <div class="ship-img">🚀</div>
+        <div class="ship-info">
+          <div class="ship-name">Starliner</div>
+          <div class="ship-launch">Next Launch: 24/03/53, 12:30</div>
+        </div>
+        <div class="ship-price">51.2<div class="price-coin"></div></div>
+      </label>
+
+      <input class="ship-radio" type="radio" name="ship" id="ship-3">
+      <label class="ship-card-label" for="ship-3">
+        <div class="ship-img" style="font-size:28px">✈️</div>
+        <div class="ship-info">
+          <div class="ship-name">Dream Chaser</div>
+          <div class="ship-launch">Next Launch: 24/03/53, 12:30</div>
+        </div>
+        <div class="ship-price">102.5<div class="price-coin" style="background:linear-gradient(135deg,#a56eff,#7c5cbf)"></div></div>
+      </label>
+    </div>
+
+    <div class="sheet-footer">
+      <a href="reserva.html" class="wallet-row">
+        <div class="wallet-icon">◈</div>
+        <span class="wallet-text">Connect Wallet</span>
+        <span class="wallet-arrow">›</span>
+      </a>
+      <a href="reserva.html" class="btn-swipe">
+        <div class="swipe-arrow">›</div>
+        Swipe To Confirm Your Booking
+      </a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

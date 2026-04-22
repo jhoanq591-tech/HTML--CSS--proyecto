@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UBERX — Reserva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/CSS/reserva.css">
+</head>
+<body>
+<div class="screen">
+
+  <div class="space-map">
+    <div class="stars-bg"></div>
+    <div class="status-bar">
+      <span>12:31</span>
+      <div class="status-right">
+        <div class="sig"><span></span><span></span><span></span><span></span></div>
+        <span>📶</span>
+        <div class="battery"><div class="battery-fill"></div></div>
+      </div>
+    </div>
+    <a href="viajes.html" class="back-btn">‹</a>
+    <div class="planet planet-earth">
+      <a href="#" class="planet-label" style="order:2">Earth ›</a>
+      <div class="planet-ball" style="order:1"></div>
+    </div>
+    <div class="planet planet-mars">
+      <a href="#" class="planet-label" style="order:1">Mars ›</a>
+      <div class="planet-ball" style="order:2"></div>
+    </div>
+    <div class="orbit-path">
+      <svg viewBox="0 0 390 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M 120 270 Q 250 80 310 110" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="8 6"/>
+        <circle cx="120" cy="270" r="4" fill="rgba(79,143,255,0.6)"/>
+        <circle cx="310" cy="110" r="4" fill="rgba(232,130,90,0.6)"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="confirm-detail">
+    <div class="confirm-handle"></div>
+    <div class="confirm-notice">⚠️ Fares are higher due to space debris</div>
+
+    <div class="ship-showcase">
+      <div class="ship-big">🛸</div>
+    </div>
+
+    <div class="ship-info-section">
+      <div class="ship-row">
+        <div class="ship-name-big">Crew Dragon <div class="capacity-badge">👤 7</div></div>
+        <div class="price-row">48.5 <div class="price-coin"></div></div>
+      </div>
+      <div class="ship-details">
+        Next Launch: 12/03/53, 19:30<br>
+        Journey duration: 18 Days, 13 Hours
+      </div>
+    </div>
+
+    <div class="sheet-footer">
+      <a href="métodos-de-pago.html" class="wallet-row">
+        <div class="wallet-icon">◈</div>
+        <span class="wallet-text">Connect Wallet</span>
+        <span class="wallet-arrow">›</span>
+      </a>
+      <a href="recibo.html" class="btn-swipe">
+        <div class="swipe-arrow">›</div>
+        Swipe To Confirm Your Booking
+      </a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
