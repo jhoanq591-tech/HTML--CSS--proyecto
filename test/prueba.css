@@ -1,0 +1,52 @@
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.btn-back:hover {
+  background: rgba(79, 143, 255, 0.15);
+  accent-color: red;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.badge-ok {
+  background: rgba(46, 204, 113, 0.15);
+  color: #2ecc71;
+}
+
+.badge-wait {
+  background: rgba(245, 166, 35, 0.15);
+  color: #f5af23;
+}
+
+.badge-cancel {
+  background: rgba(231, 76, 60, 0.15);
+  color: #e74c3c;
+}
+
+.badge-in-process {
+  background: rgba(77, 60, 231, 0.15);
+  color: #3c42e7;
+}
+
+.user-name-missions {
+  font-size: 15px;
+  font-weight: 300;
+  align-items: center;
+}
